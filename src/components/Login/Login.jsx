@@ -112,7 +112,7 @@ const LoginForm = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:9000/auth/google";
+    window.location.href = "https://backend-shop-production-14fa.up.railway.app/auth/google";
   };
   // App.js hoặc component gốc
 

@@ -22,7 +22,7 @@ const AuthCallback = () => {
           const decoded = jwtDecode(token);
 
           // Fetch user details with the token
-          const response = await fetch("http://localhost:9000/auth/user", {
+          const response = await fetch("https://backend-shop-production-14fa.up.railway.app/auth/user", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

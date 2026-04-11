@@ -18,7 +18,7 @@ const FacebookLogin = () => {
 
       const { accessToken, userID } = data;
 
-      const res = await axios.post("http://localhost:9000/auth/facebook", {
+      const res = await axios.post("https://backend-shop-production-14fa.up.railway.app/auth/facebook", {
         accessToken,
         userID,
       });

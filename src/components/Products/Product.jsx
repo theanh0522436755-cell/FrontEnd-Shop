@@ -426,7 +426,7 @@ const Products = () => {
   const props = {
     name: "execl",
     accept: ".xlsx,.xls",
-    action: "http://localhost:9000/api/v1/products/excel",
+    action: "https://backend-shop-production-14fa.up.railway.app/api/v1/products/excel",
     headers: {
       Authorization: `Bearer ${token}`,
     },

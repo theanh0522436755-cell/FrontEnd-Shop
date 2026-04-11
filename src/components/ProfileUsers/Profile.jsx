@@ -557,7 +557,7 @@ const Profile = () => {
               size="large"
               value={name}
               onChange={handleChange}
-              placeholder="Đặng Trịnh Duy Anh"
+              placeholder="Mai The Anh"
               className={error ? "border-red-500" : ""}
               maxLength={17}
             />

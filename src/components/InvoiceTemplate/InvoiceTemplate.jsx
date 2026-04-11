@@ -61,7 +61,7 @@ export const InvoiceTemplate = forwardRef(({ transaction }, ref) => {
                 marginBottom: "10px",
               }}
             >
-              Cửa hàng Duy Anh Shop
+              Cửa hàng Mai The Anh
             </div>
             <div style={{ color: "#666", fontSize: "12px", lineHeight: "1.8" }}>
               <div>
@@ -345,7 +345,7 @@ export const InvoiceTemplate = forwardRef(({ transaction }, ref) => {
               paddingTop: "15px",
             }}
           >
-            Đặng Trịnh Duy Anh
+           Mai The Anh
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ const BrandAboutPage = () => {
 
   const testimonials = [
     {
-      name: "Đặng Trịnh Duy Anh",
+      name: "Mai The Anh",
       role: "Khách hàng VIP",
       content:
         "Tôi đã mua sắm ở đây được 3 năm và chưa bao giờ thất vọng. Chất lượng sản phẩm luôn đảm bảo, giá cả hợp lý và dịch vụ chăm sóc khách hàng rất tốt.",
