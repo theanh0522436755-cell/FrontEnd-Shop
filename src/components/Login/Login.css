@@ -1,0 +1,68 @@
+/* Custom styles for Ant Design components */
+.custom-password-input .ant-input-affix-wrapper {
+  border-radius: 12px !important;
+  height: 48px !important;
+  border-width: 2px !important;
+  transition: all 0.2s ease !important;
+}
+
+.custom-password-input .ant-input-affix-wrapper:hover {
+  border-color: #d1d5db !important;
+}
+
+.custom-password-input .ant-input-affix-wrapper:focus,
+.custom-password-input .ant-input-affix-wrapper-focused {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+}
+
+.custom-password-input.error .ant-input-affix-wrapper {
+  border-color: #fca5a5 !important;
+  background-color: #fef2f2 !important;
+}
+
+.custom-password-input .ant-input {
+  background: transparent !important;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: linear-gradient(90deg, #000 50%, #0000 0) right/200% 100%;
+  animation: l21 2s infinite linear;
+}
+.loader::before {
+  content: "Loading...";
+  color: #0000;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(90deg, #fff 50%, #000 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l21 {
+  100% {
+    background-position: left;
+  }
+}

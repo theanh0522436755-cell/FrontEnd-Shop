@@ -1,0 +1,516 @@
+/* Clothing Male Component - Responsive với 267.2px cho desktop/tablet */
+
+/* Reset and base styles */
+.clothing-male-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 100vh;
+}
+
+.clothing-male-wrapper *,
+.clothing-male-wrapper *::before,
+.clothing-male-wrapper *::after {
+  box-sizing: border-box;
+}
+
+/* Layout Grid */
+.clothing-male-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+/* Sidebar - Hidden on mobile */
+.clothing-male-sidebar {
+  display: none;
+}
+
+/* Main Content Area */
+.clothing-male-main-content {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Products Grid - Mobile First (responsive) */
+.clothing-male-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* Product Card - Mobile First */
+.clothing-male-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: auto;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.clothing-male-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+/* Product Image Container */
+.clothing-male-card .relative {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Product Image - Responsive */
+.clothing-male-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.clothing-male-card:hover .clothing-male-image {
+  transform: scale(1.03);
+}
+
+/* Discount Badge */
+.clothing-male-card .absolute.top-3.right-3 {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+  z-index: 10;
+}
+
+/* Action Buttons */
+.clothing-male-card .absolute.bottom-3.right-3 {
+  display: flex;
+  gap: 0.4rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+}
+
+.clothing-male-card:hover .absolute.bottom-3.right-3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clothing-male-card .absolute.bottom-3.right-3 button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.clothing-male-card .absolute.bottom-3.right-3 button:first-child {
+  background: rgba(255, 255, 255, 0.9);
+  color: #374151;
+}
+
+.clothing-male-card .absolute.bottom-3.right-3 button:last-child {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.clothing-male-card .absolute.bottom-3.right-3 button:hover {
+  transform: scale(1.1);
+}
+
+/* Product Content */
+.clothing-male-content {
+  padding: 1rem;
+  background: white;
+}
+
+/* Brand */
+.clothing-male-content p:first-child {
+  color: #22c55e;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+/* Product Title */
+.clothing-male-title {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.4rem;
+}
+
+/* Price Container */
+.clothing-male-content .flex.items-center.justify-between {
+  margin-bottom: 0.8rem;
+}
+
+/* Product Price */
+.clothing-male-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.clothing-male-original-price {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+  margin-left: 0.4rem;
+}
+
+/* Rating Stars */
+.clothing-male-content .ant-rate {
+  font-size: 0.8rem;
+}
+
+/* Filter Button */
+.clothing-male-filter-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  height: 44px !important;
+  padding: 0 1.2rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Breadcrumb and Header Cards */
+.clothing-male-main-content > div:first-child,
+.clothing-male-main-content > div:nth-child(2) {
+  background: white;
+  padding: 10px 0px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sort Dropdown */
+.clothing-male-main-content .relative .absolute {
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Pagination */
+.clothing-male-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.clothing-male-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: white;
+}
+
+/* Tablet Styles - 3 columns với 267.2px */
+@media (min-width: 768px) {
+  .clothing-male-wrapper {
+    padding: 2rem;
+  }
+
+  .clothing-male-layout-grid {
+    gap: 1rem;
+  }
+
+  .clothing-male-grid {
+    grid-template-columns: repeat(3, 267.2px);
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .clothing-male-card {
+    width: 267.2px;
+    max-width: 267.2px;
+    min-width: 267.2px;
+    border-radius: 18px;
+  }
+
+  .clothing-male-image {
+    width: 267.2px;
+    height: 240px;
+  }
+
+  .clothing-male-content {
+    padding: 1.2rem;
+    width: 267.2px;
+  }
+
+  .clothing-male-title {
+    font-size: 1rem;
+  }
+
+  .clothing-male-price {
+    font-size: 1.1rem;
+  }
+
+  .clothing-male-page-link {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop Styles - 3 columns với 267.2px cho màn hình < 1450px */
+@media (min-width: 1024px) {
+  .clothing-male-wrapper {
+    padding: 1rem;
+  }
+
+  .clothing-male-layout-grid {
+    grid-template-columns: 290px 1fr;
+    gap: 3rem;
+  }
+
+  .clothing-male-sidebar {
+    display: block;
+  }
+
+  .clothing-male-grid {
+    grid-template-columns: repeat(3, 267.2px);
+    gap: 1.2rem;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .clothing-male-card {
+    width: 267.2px;
+    max-width: 267.2px;
+    min-width: 267.2px;
+    border-radius: 20px;
+  }
+
+  .clothing-male-image {
+    width: 267.2px;
+    height: 260px;
+  }
+
+  .clothing-male-content {
+    padding: 1.5rem;
+    width: 267.2px;
+  }
+
+  .clothing-male-title {
+    font-size: 1.1rem;
+  }
+
+  .clothing-male-price {
+    font-size: 1.2rem;
+  }
+
+  .clothing-male-filter-btn {
+    display: none !important;
+  }
+
+  .clothing-male-page-link {
+    width: 44px;
+    height: 44px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large Desktop - 4 columns chỉ khi >= 1450px */
+@media (min-width: 1450px) {
+  .clothing-male-wrapper {
+    padding: 2rem;
+    max-width: 1500px;
+  }
+
+  .clothing-male-layout-grid {
+    grid-template-columns: 290px 1fr;
+    gap: 2rem;
+  }
+
+  .clothing-male-grid {
+    grid-template-columns: repeat(4, 267.2px);
+    gap: 1rem;
+  }
+
+  .clothing-male-image {
+    height: 280px;
+  }
+}
+
+/* Mobile nhỏ - 1 column */
+@media (max-width: 480px) {
+  .clothing-male-wrapper {
+    padding: 10px;
+  }
+
+  .clothing-male-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .clothing-male-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .clothing-male-image {
+    height: 220px;
+  }
+
+  .clothing-male-content {
+    padding: 1rem;
+  }
+
+  .clothing-male-title {
+    font-size: 0.9rem;
+  }
+
+  .clothing-male-price {
+    font-size: 1rem;
+  }
+}
+
+/* Loading states */
+.clothing-male-grid .ant-skeleton {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Hover effects cho pagination */
+.clothing-male-page-link:hover {
+  border-color: #22c55e;
+  background: #f0fdf4;
+  color: #16a34a;
+  transform: translateY(-1px);
+}
+
+.clothing-male-page-link.active {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  border-color: #22c55e;
+}
+
+:global(.custom-sort-dropdown) {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+:global(.custom-sort-dropdown .ant-select-item) {
+  border-radius: 8px;
+  margin: 4px 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+:global(.custom-sort-dropdown .ant-select-item:hover) {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-color: #e2e8f0;
+  transform: translateX(4px);
+}
+
+:global(.custom-sort-dropdown .ant-select-item-option-selected) {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-color: #3b82f6;
+  font-weight: 600;
+}
+
+:global(.custom-sort-dropdown .ant-select-item-option-selected:hover) {
+  background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+}
+
+:global(.ant-select-selector) {
+  border-radius: 12px !important;
+  border: 2px solid #e5e7eb !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%) !important;
+  transition: all 0.3s ease !important;
+  padding: 8px 16px !important;
+  min-height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+:global(.ant-select-selector:hover) {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1) !important;
+}
+
+:global(.ant-select-focused .ant-select-selector) {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15) !important;
+}
+
+:global(.ant-select-selection-item) {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  color: #374151 !important;
+}
+
+:global(.ant-select-arrow) {
+  color: #6b7280 !important;
+  font-size: 16px !important;
+}
+
+@media (max-width: 768px) {
+  :global(.ant-select) {
+    min-width: 180px !important;
+  }
+
+  :global(.ant-select-selector) {
+    padding: 6px 12px !important;
+    min-height: 44px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  :global(.ant-select) {
+    min-width: 160px !important;
+    width: 100% !important;
+  }
+
+  :global(.ant-select-selector) {
+    padding: 6px 12px !important;
+    min-height: 44px !important;
+    border-radius: 12px !important;
+  }
+}

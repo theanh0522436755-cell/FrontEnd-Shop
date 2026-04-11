@@ -1,0 +1,107 @@
+{
+  "initial_message": {
+    "id": "welcome",
+    "text": "Chúc bạn ngày mới tốt lành! Mình là trợ lý ảo của DA Fashion. Bạn muốn mua quần áo , xem sản phẩm ,CEO của... web hãy nói với mình nhé!",
+    "sender": "bot"
+  },
+  "quick_suggestions": [
+    "Xem các mẫu áo mới nhất",
+    "Thương hiệu nào đang được ưa chuộng?",
+    "Chính sách đổi trả",
+    "Làm sao để đặt hàng?"
+  ],
+  "qa_pairs": [
+    {
+      "keywords": ["quần áo", "danh mục", "mẫu mã", "đồ"],
+      "response": {
+        "type": "product_list",
+        "text": "Dưới đây là danh mục quần áo của chúng tôi:",
+        "action": "show_clothing_categories"
+      }
+    },
+    {
+      "keywords": [
+        "sản phẩm cao cấp",
+        "cao cấp",
+        "hàng hiệu",
+        "premium",
+        "luxury"
+      ],
+      "response": {
+        "type": "premium_products",
+        "text": "Đây là những bộ sưu tập thời trang cao cấp của chúng tôi:",
+        "action": "show_premium_clothes"
+      }
+    },
+    {
+      "keywords": ["thương hiệu", "brand", "hãng", "nhãn hiệu"],
+      "response": {
+        "type": "popular_brands",
+        "text": "Những thương hiệu được ưa chuộng hiện nay:",
+        "action": "show_popular_brands"
+      }
+    },
+    {
+      "keywords": ["size", "kích cỡ", "chọn size", "cỡ"],
+      "response": {
+        "type": "size_guide",
+        "text": "Bạn có thể tham khảo bảng chọn size tại đây:",
+        "action": "show_size_chart"
+      }
+    },
+    {
+      "keywords": ["đổi trả", "bảo hành", "trả hàng", "hoàn tiền"],
+      "response": {
+        "type": "return_policy",
+        "text": "Chính sách đổi trả sản phẩm của chúng tôi:",
+        "details": [
+          "Đổi hàng trong vòng 15 ngày kể từ ngày nhận hàng",
+          "Miễn phí đổi size/lỗi sản xuất",
+          "Hoàn tiền nếu sản phẩm bị lỗi nghiêm trọng",
+          "Không hỗ trợ đổi trả với sản phẩm đã qua sử dụng"
+        ]
+      }
+    },
+    {
+      "keywords": ["đặt hàng", "mua hàng", "cách mua", "order"],
+      "response": {
+        "type": "purchase_guide",
+        "text": "Các bước đặt hàng tại cửa hàng:",
+        "steps": [
+          "Chọn sản phẩm bạn yêu thích",
+          "Chọn size và thêm vào giỏ hàng",
+          "Điền thông tin giao hàng",
+          "Chọn hình thức thanh toán",
+          "Xác nhận đơn hàng và chờ giao"
+        ]
+      }
+    },
+    {
+      "keywords": ["giảm giá", "khuyến mãi", "ưu đãi", "sale"],
+      "response": {
+        "type": "promotions",
+        "text": "Dưới đây là chương trình ưu đãi đang diễn ra:",
+        "action": "show_current_promotions"
+      }
+    },
+    {
+      "keywords": ["liên hệ", "hỗ trợ", "hotline", "tư vấn"],
+      "response": {
+        "type": "contact_info",
+        "text": "Bạn có thể liên hệ với chúng tôi qua:",
+        "data": {
+          "phone": "1900 9999",
+          "email": "hotro@quanao.vn",
+          "address": "456 Lê Văn Sỹ, Quận 3, TP.HCM",
+          "working_hours": "9:00 - 21:00 (T2 - CN)"
+        }
+      }
+    }
+  ],
+  "fallback_responses": [
+    "Xin lỗi, tôi chưa hiểu câu hỏi của bạn. Bạn có thể hỏi về sản phẩm, đặt hàng hoặc chính sách đổi trả nhé!",
+    "Bạn có thể nói rõ hơn được không? Tôi sẽ cố gắng hỗ trợ!",
+    "Tôi không tìm thấy thông tin phù hợp. Bạn thử dùng từ khóa khác nhé!",
+    "Tôi xin lỗi, chưa có dữ liệu phù hợp với câu hỏi đó. Bạn có thể hỏi về size, sản phẩm hoặc ưu đãi nhé!"
+  ]
+}
