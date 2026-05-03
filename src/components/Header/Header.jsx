@@ -602,7 +602,7 @@ const Header = ({
                 />
                 <div className="hidden sm:block">
                   <span className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                 MAI THẾ ANH
+                TA Store
                   </span>
                 </div>
               </Link>
