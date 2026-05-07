@@ -81,7 +81,10 @@ const Details = () => {
     ? description.slice(0, maxLength) + "..."
     : description;
 
-  const [clothImage, setClothImage] = useState(null);
+  const [clothImage, setClothImage] = useState( null);
+
+  console.log(image);
+  
   const [modal2Open, setModal2Open] = useState(false);
 
   const handlePageClick = ({ selected }) => {
@@ -145,6 +148,7 @@ const Details = () => {
         SetquantityProduct(res.data.data.sold || 0);
         SetShift(res.data.data.category || "");
         setGender(res.data.data.gender || "");
+        setClothImage(allImages[0]?.url)
       }
     } catch (error) {
       console.log(error);

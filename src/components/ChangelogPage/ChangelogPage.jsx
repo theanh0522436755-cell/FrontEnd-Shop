@@ -247,7 +247,7 @@ const ChangelogPage = () => {
               href="mailto:feedback@coolmate.me"
               className="text-blue-400 hover:text-blue-300"
             >
-              feedback@dangtrinhduyanh100202@gmail.com
+              feedback@theanh0522436755@gmail.com
             </a>
           </p>
         </div>

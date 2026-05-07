@@ -162,7 +162,7 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-400">
-              © {new Date().getFullYear()} DA Fashion. Tất cả quyền được bảo
+              © {new Date().getFullYear()} TA Store. Tất cả quyền được bảo
               lưu.
             </div>
             <div className="flex items-center gap-6 text-sm text-gray-400">

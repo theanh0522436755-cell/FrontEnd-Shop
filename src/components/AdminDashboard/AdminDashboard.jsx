@@ -347,7 +347,7 @@ export default function AdminDashboard() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-          Mai The Anh
+              Duy Anh Shop
             </h1>
             <p className="text-green-300">
               Hệ thống dự báo AI với Auto-Detection ⚡
@@ -1091,7 +1091,7 @@ export default function AdminDashboard() {
 
         {/* Footer */}
         <div className="text-center text-gray-400 text-sm">
-          <p>Mai The Anh Shop • Powered by AI & Auto-Detection System ⚡</p>
+          <p>Duy Anh Shop • Powered by AI & Auto-Detection System ⚡</p>
         </div>
       </div>
     </div>

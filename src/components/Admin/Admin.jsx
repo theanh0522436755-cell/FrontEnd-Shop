@@ -110,16 +110,16 @@ const menuItems = [
     activeBg: "from-pink-500 to-pink-600",
     allowedRoles: ["admin"],
   },
-  {
-    icon: <MdAssessment className="text-2xl" />,
-    label: "Quản lí báo cáo",
-    to: "du-doan",
-    color: "text-red-600",
-    bgColor: "bg-red-50",
-    hoverBg: "hover:bg-red-100",
-    activeBg: "from-red-500 to-red-600",
-    allowedRoles: ["admin"],
-  },
+  // {
+  //   icon: <MdAssessment className="text-2xl" />,
+  //   label: "Quản lí báo cáo",
+  //   to: "du-doan",
+  //   color: "text-red-600",
+  //   bgColor: "bg-red-50",
+  //   hoverBg: "hover:bg-red-100",
+  //   activeBg: "from-red-500 to-red-600",
+  //   allowedRoles: ["admin"],
+  // },
   {
     icon: <FiShoppingBag className="text-2xl" />,
     label: "Quản lí Đơn hàng",
@@ -219,6 +219,16 @@ const menuItems = [
     icon: <PiPantsFill className="text-2xl" />,
     label: "Quản lí bảng size quần",
     to: "/admin/quan-li-bang-size-quan",
+    color: "text-violet-600",
+    bgColor: "bg-violet-50",
+    hoverBg: "hover:bg-violet-100",
+    activeBg: "from-violet-500 to-violet-600",
+    allowedRoles: ["admin"],
+  },
+   {
+    icon: <PiPantsFill className="text-2xl" />,
+    label: "Quản lí bảng màu",
+    to: "/admin/color",
     color: "text-violet-600",
     bgColor: "bg-violet-50",
     hoverBg: "hover:bg-violet-100",
@@ -449,7 +459,7 @@ const Admin = () => {
                 <MdDashboard className="text-3xl text-white drop-shadow-lg" />
               </div>
               <div>
-                <h1 className="text-2xl font-black tracking-tight">DA SHOP</h1>
+                <h1 className="text-2xl font-black tracking-tight">TA Store</h1>
                 <p className="text-blue-100 text-sm font-medium">
                   Admin Dashboard
                 </p>

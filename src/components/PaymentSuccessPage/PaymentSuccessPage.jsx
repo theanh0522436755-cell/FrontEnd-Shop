@@ -174,7 +174,7 @@ const PaymentSuccessPage = () => {
         <div className="text-center mb-8">
           <CheckCircle className="h-20 w-20 text-green-600 mx-auto animate-pulse mb-4" />
           <h1 className="text-3xl font-bold text-green-800 mb-2">
-            Thanh Toán Thành Công!
+            {orderData.paymentMethod === "cod" ? "Chờ thanh toán": "Thanh toán thành công"}
           </h1>
           <p className="text-gray-600 text-lg">
             Cảm ơn bạn đã mua hàng. Đơn hàng của bạn đang được xử lý.

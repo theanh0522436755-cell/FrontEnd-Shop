@@ -18,9 +18,10 @@ const VirtualTryOnApp = ({
   setClothImage,
 }) => {
   // Hardcode API key - thay thế bằng API key thực của bạn
-  const API_KEY =
-    "d4357dbc91e54a75885b0aaa06f5f60462d12273ae72f5df224b0f909c4d17a1";
+  const API_KEY ="58f0477485804bf8af671c526bb4aaf491f80621927b83dd75cad03207499c3c"
 
+  console.log(clothImage);
+  
   // State management
   const [modelImage, setModelImage] = useState(null);
   const [lowerClothImage, setLowerClothImage] = useState(null);
